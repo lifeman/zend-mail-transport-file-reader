@@ -1,0 +1,24 @@
+{
+    "name": "elvisciotti/zend-mail-transport-file-reader",
+    "type": "library",
+    "description": "Utility to parse email written into separate files inside a directories, e.g. by Zend_Mail_Transport_File",
+    "keywords": ["php", "mail", "zend", "transport", "file", "log"],
+    "homepage": "https://github.com/elvisciotti/zend-mail-transport-file-reader",
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Elvis Ciotti",
+            "email": "elvis@phpntips.com"
+        }
+    ],
+    "require": {
+         "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-0": { 
+            "Ec\\File": "library", 
+            "Ec\\EmailLogReader": "library" 
+        }
+    }
+}

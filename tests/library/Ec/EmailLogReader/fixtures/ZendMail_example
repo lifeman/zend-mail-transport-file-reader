@@ -1,0 +1,23 @@
+X-SMTPAPI: {"category": "www.site.com"}
+From: Site <noreply@site.com>
+To: test@site.com
+Bcc: testing.site@gmail.com
+Subject: Email Subject !
+Date: Thu, 31 Jan 2013 09:59:07 +0000
+Content-Type: multipart/alternative;
+ boundary="=_7f875bf10939c3620f048c02ea4d1577"
+MIME-Version: 1.0
+
+--=_7f875bf10939c3620f048c02ea4d1577
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+This is the text of the mail
+
+--=_7f875bf10939c3620f048c02ea4d1577
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<b>This is the text of the mail HTML version<b/>
+
+--=_7f875bf10939c3620f048c02ea4d1577--
