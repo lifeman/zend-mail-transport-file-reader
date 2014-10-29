@@ -38,6 +38,16 @@ class MailEntryTest extends \PHPUnit_Framework_TestCase
         );
         $this->assertEquals('Email Subject !', $object->getSubject());
         $this->assertEquals('test@site.com', $object->getTo());
+        $this->assertEquals(675, strlen($object->getRaw()));
     }
+    
+//    public function testAttachment()
+//    {
+//        $object = new MailEntry(
+//            file_get_contents(__DIR__ . '/fixtures/ZendMail_example')        
+//        );
+//        $this->assertEquals('Email Subject !', $object->getSubject());
+//        $this->assertEquals('test@site.com', $object->getTo());
+//    }
     
 }

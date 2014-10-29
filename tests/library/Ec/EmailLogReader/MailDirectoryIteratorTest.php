@@ -23,7 +23,7 @@ class MailDirectoryIteratorTest extends \PHPUnit_Framework_TestCase
     
     public function testIteratorReturnsMailEntriesWithValidEmailAddress()
     {
-        $this->assertCount(1, $this->object);
+        $this->assertCount(2, $this->object);
         foreach ($this->object as $entry) {
             $this->assertInstanceOf(__NAMESPACE__ . '\\MailEntry', $entry);
             $this->assertRegExp('/@/', $entry->getTo());
@@ -33,7 +33,7 @@ class MailDirectoryIteratorTest extends \PHPUnit_Framework_TestCase
     public function testgetFilePathsReturns2ExistingFiles()
     {
         $actual = $this->object->getFilePaths();
-        $this->assertCount(1, $actual);
+        $this->assertCount(2, $actual);
         foreach($actual as $filePath) {
             $this->assertTrue(file_exists($filePath));
         }
