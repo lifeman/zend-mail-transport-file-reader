@@ -1,5 +1,5 @@
 {
-    "name": "elvisciotti/zend-mail-transport-file-reader",
+    "name": "lifeman/zend-mail-transport-file-reader",
     "type": "library",
     "description": "Utility to parse email written into separate files inside a directories, e.g. by Zend_Mail_Transport_File",
     "keywords": ["php", "mail", "zend", "transport", "file", "log"],
